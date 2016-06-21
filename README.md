@@ -1,4 +1,6 @@
-# dataviz-card-game
+# The Dataviz Card Game
+
+![](https://raw.githubusercontent.com/ecoledesdonnees/dataviz-card-game/master/visuals/logoDatavizCardGame2.png)
 
 [![Join the chat at https://gitter.im/ecoledesdonnees/dataviz-card-game](https://badges.gitter.im/ecoledesdonnees/dataviz-card-game.svg)](https://gitter.im/ecoledesdonnees/dataviz-card-game)  
 
