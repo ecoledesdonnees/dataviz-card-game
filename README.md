@@ -9,12 +9,12 @@ Resources and Documentation for the Dataviz Card Game
 
 ### Key Links:
 
-* Github repository: https://github.com/ecoledesdonnees/dataviz-card-game
-* Chatroom: https://gitter.im/ecoledesdonnees/dataviz-card-game
-* Public Trello [fr]: https://trello.com/b/vlRhf3x1/jeu-de-cartes-dataviz
-* Original proposal [en]: https://drive.google.com/file/d/0B0Wnp46TQKpBdHVUZDFvcUZNSmc/view?usp=sharing
+* [Github repository](https://github.com/ecoledesdonnees/dataviz-card-game)
+* [Chatroom](https://gitter.im/ecoledesdonnees/dataviz-card-game)
+* [Public Trello [fr]](https://trello.com/b/vlRhf3x1/jeu-de-cartes-dataviz)
+* [Original proposal [en]](https://drive.google.com/file/d/0B0Wnp46TQKpBdHVUZDFvcUZNSmc/view?usp=sharing)
 
-The Dataviz Card Game projects intends to create physical game cards as a support for knowledge transfer on the topic of data visualization. 
+**The Dataviz Card Game projects intends to create physical game cards as a support for knowledge transfer on the topic of data visualization.**
 
 The Dataviz Card Game has been prototyped by Cédric Lombion in 2014, and was inspired by [The Dataviz Catalogue](http://www.datavizcatalogue.com/). It has since become a project under the banner of [Ecole des données](http://ecoledesdonnees.org/) (School of Data France) ([Twitter](https://twitter.com/ecoledesdonnees) and [contact](mailto:ecoledesdonnees@okfn.org)). The work on the project has been partially financed by [School of Data](http://schoolofdata.org/)'s innovation fund ([Twitter]() and [contact](http://schoolofdata.org/contact/)).
 
