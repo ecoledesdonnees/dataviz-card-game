@@ -1,0 +1,42 @@
+---
+layout: default
+title: Blog
+isInMenu: 1
+ref : blog
+lang: en
+order : 3
+---
+
+<section class="hero hero-blog">
+	<ul class="tags-list">
+		<li>Tag</li>
+		<li>Tag</li>
+		<li>Tag</li>
+		<li>Tag</li>
+		<li>Tag</li>
+		<li>Tag</li>
+	</ul>
+</section>
+
+
+<section class="posts-container">
+	{% include borderline.html %}
+	<div class="post-grid">
+		{% assign posts=site.posts | where:"lang", page.lang %}
+		{% for post in posts %}
+		<article>
+			<div class="post-header">
+			    <div class="txt-container">
+			    	<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+			    	<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+			    </div>
+				<img src="http://placehold.it/300x169">
+			</div>
+			<div class="post-intro">
+				{{post.excerpt}}
+				<a class="cta-readmore" href="{{ post.url | prepend: site.baseurl }}">{{site.t[page.lang].readMore}}</a>
+			</div>
+
+		</article>
+		{% endfor %}
+</section>

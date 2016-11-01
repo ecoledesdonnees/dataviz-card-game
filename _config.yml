@@ -26,3 +26,30 @@ github_username:  ecoledesdonnees
 
 # Build settings
 markdown: kramdown
+
+#translations
+t:
+  en:
+    langLabel: "English"
+    readMore: "Read more"
+    home:
+      name: "Home"
+      url: "/"
+    about:
+      name: "About"
+      url: "/about.html"
+    contact:
+      name: "Contact"
+      url: "/contact.html"
+  fr:
+    langLabel: "Français"
+    readMore: "Lire l'article"
+    home:
+      name: "Accueil"
+      url: "/accueil.html"
+    about:
+      name: "À propos"
+      url: "/a-propos.html"
+    contact:
+      name: "Contact"
+      url: "/contact-fr.html"
