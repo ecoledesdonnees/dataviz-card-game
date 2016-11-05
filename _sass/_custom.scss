@@ -40,7 +40,7 @@ $susy: (
                     float: left;
                     padding: 7px 20px ; 
                     font-size: 1.875em;
-                    border-radius : 5px ; 
+                    border-radius : 2px ; 
                     border : 1px solid transparent;
                     border-bottom: 3px solid transparent;
                 
@@ -91,15 +91,20 @@ $susy: (
     border : 1px solid $blue;
     color : $blue ;
     background-color: $background-color;
-    border-radius : 3px;
+    border-radius : 2px;
     display: inline-block;
     cursor: pointer;
-    transition : background-color 0.3s ease(out-quad),color 0.3s ease(out-quad);
+    transition : background-color 0.3s ease(out-quad),color 0.3s ease(out-quad),
+                 border-color 0.3s ease(out-quad),color 0.3s ease(out-quad)
+                 ;
 } 
 .cta-blue {
     border-bottom: 3px solid $blue;
     &:hover {
         background-color : $blue;
+        margin-top: 1px;
+        border-bottom: 2px solid $blue;
+        border-color: darken($blue, 10);
         color: #fff;
     }
 }
@@ -167,7 +172,7 @@ section.intro {
         }
     }
     .borderline-container {
-        img {left : 48%; transform : translateY(-52%) rotate(180deg);background-color: $background-color;}
+        img {left : 12.5%; transform : translateY(-52%) rotate(180deg);background-color: $background-color;}
     }
 }
 
