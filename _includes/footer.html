@@ -1,7 +1,20 @@
 <footer class="site-footer">
+	{% include borderline.html %}
+	<div class="follow-container">
+		<span>Follow us : </span>
+		<ul>
+			<li><i class="icon-camera-alt"></i></li>
+			<li><i class="icon-twitter"></i></li>
+			<li><i class="icon-rss"></i></li>
+		</ul>
+	</div>
 
-  <div class="wrapper">
-
-  </div>
+	<nav>
+		<ul>
+			<li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="icon-logodcg"></i></a></li>
+			<li><a href="{{ site.t[page.lang].about.url | prepend: site.baseurl }}">{{ site.t[page.lang].about.name}}</a></li>
+			<li><a href="{{ '/contact' | prepend: site.baseurl }}">Contact</a></li>
+		</ul>
+	</nav>
 
 </footer>

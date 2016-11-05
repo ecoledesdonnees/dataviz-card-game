@@ -1,14 +1,61 @@
 ---
 layout: default
 ref: index
+title: Accueil
+isInMenu: 1
 lang: fr
 ---
+<section class="hero-home">
+	<div class="page-content">
+		<div class="row">
+			<div class="column download">
+				<span class="txt">Interested ?</span>
+				<a>Learn more</a>
+				<span class="cta cta-red">Download <i class="icon-logodcg"></i></span>
+			</div>
+			
+			<div class="column feedback">
+				<span class="txt">Did you use<br>the game ?</span>
+				<span class="cta cta-blue">Give feedback</span>
+			</div>
+			
+			<div class="column try">
+				<span class="txt">Eager to learn ?</span>
+				<span class="cta cta-blue">Test yourself</span>
+			</div>
+		
+		</div>
+	</div>
+</section>
 
-<div class="home">
+<section class="intro">
+	<div class="row">
+		
+		<div class="column">
+			<h2>Story Cards</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit ornare fermentum. Pellentesque libero nulla, pretium ultricies dictum dignissim, vulputate vel ante. Vivamus sagittis quam a tincidunt tristique. Quisque rutrum mi nec venenatis viverra. Nunc commodo ornare mi at finibus.</p>
+			<div class="ctas-container">
+				<span class="cta cta-blue">Learn more</span>
+				<span class="cta cta-red">Download</span>
+			</div>
+		</div>
 
-  {% capture about %}{% include a-propos.md %}{% endcapture %}
-  {{ about | markdownify }}
+		<div class="column">
+			<h2>Dataviz Cards</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit ornare fermentum. Pellentesque libero nulla, pretium ultricies dictum dignissim, vulputate vel ante. Vivamus sagittis quam a tincidunt tristique. Quisque rutrum mi nec venenatis viverra. Nunc commodo ornare mi at finibus.</p>
+			<div class="ctas-container">
+				<span class="cta cta-blue">Learn more</span>
+				<span class="cta cta-red">Download</span>
+			</div>
+		</div>
 
-  <p class="rss-subscribe">suivre le <a href="{{ "/flux.xml" | prepend: site.baseurl }}">flux RSS</a></p>
+	</div>
+	{% include borderline.html %}
+</section>
 
-</div>
+
+<!--   {% capture about %}{% include about.md %}{% endcapture %}
+  {{ about | markdownify }} 
+  {% include styletile.html %} -->
+  
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
