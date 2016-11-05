@@ -12,17 +12,17 @@ title:
 email: your-email@domain.com
 description:
   en: The Dataviz Card Game projects intends to create physical game cards as a support of knowledge transfer on the theme of data visualization. The Dataviz Card Game has been prototyped by Cédric Lombion in 2014, and has since become a project under the banner of Ecole des données. The work on the project has been partially financed by School of Data's innovation fund.
-  fr: A TRADUIRE. The Dataviz Card Game projects intends to create physical game cards as a support of knowledge transfer on the theme of data visualization. The Dataviz Card Game has been prototyped by Cédric Lombion in 2014, and has since become a project under the banner of Ecole des données. The work on the project has been partially financed by School of Data's innovation fund.
+  fr: Écrivez une super description de votre nouveau site ici. Vous pouvez modifier cette ligne dans _config.yml. Elle apparaîtra dans la balise meta description (pour les résultats sur Google) et dans le fil RSS feed.xml.
 index:
   en:
   fr: accueil.html
 feed:
   en: /feed.xml
   fr: /flux.xml
-baseurl: "/dataviz-card-game" # the subpath of your site, e.g. /blog
-url: "http://ecoledesdonnees.github.io/dataviz-card-game/" # the base hostname & protocol for your site
-twitter_username: ecoledesdonnees
-github_username:  ecoledesdonnees
+baseurl: "/dataviz-card-game-website" # the subpath of your site, e.g. /blog
+url: "http://paulplo.github.io/dataviz-card-game-website/" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
 
 # Build settings
 markdown: kramdown
