@@ -27,18 +27,30 @@ $susy: (
         right: 10% ;
         ul {
             li {
-                margin-right: 20px ; 
-                padding: 10px ; 
-                font-size: 1.875em;
-                display: inline-block;
-                border-radius : 5px ; 
-                border : 1px solid transparent;
                 
-                &:last-child {margin-right : 0;}
-                &:hover {background-color : #fff;border-color : $text-color;}
+                display: inline;
+                
+                
+                
 
-                a, a:visited {color : $text-color;}
-                a:hover {text-decoration: none;}
+                a, a:visited {
+                    color : $text-color;
+                    margin-right: 5px ; 
+                    display: block;
+                    float: left;
+                    padding: 7px 20px ; 
+                    font-size: 1.875em;
+                    border-radius : 5px ; 
+                    border : 1px solid transparent;
+                    border-bottom: 3px solid transparent;
+                
+                }
+                a:hover {
+                    text-decoration: none;
+                    background-color : #fff;
+                    border-color : $text-color;
+                }
+                &:last-child a {margin-right : 0;}
             }
         }
     }
@@ -76,7 +88,7 @@ $susy: (
 .row {display: flex ; }
 .cta {
     padding: 20px 50px ;
-    border : 2px solid $blue;
+    border : 1px solid $blue;
     color : $blue ;
     background-color: $background-color;
     border-radius : 3px;
@@ -85,7 +97,7 @@ $susy: (
     transition : background-color 0.3s ease(out-quad),color 0.3s ease(out-quad);
 } 
 .cta-blue {
-    border-bottom: 4px solid $blue;
+    border-bottom: 3px solid $blue;
     &:hover {
         background-color : $blue;
         color: #fff;
@@ -115,6 +127,9 @@ section {padding: 50px 10%;position: relative;}
  */
 
 section.hero-home {
+    
+    padding-bottom: 0;
+
     .page-content {
         background-image: url("http://placehold.it/1090x422/ffffff");
         background-size : cover ;
@@ -337,7 +352,7 @@ footer {
                 cursor: pointer;
                 display: inline-block;
                 font-size: 1.5em;
-                &:hover {color : $red;}
+                &:hover {color : $blue;}
             }
         }
     }
