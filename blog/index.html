@@ -9,22 +9,36 @@ order : 3
 
 <section class="hero hero-blog">
 	<ul class="tags-list">
-		<li>Tag</li>
-		<li>Tag</li>
-		<li>Tag</li>
-		<li>Tag</li>
-		<li>Tag</li>
-		<li>Tag</li>
+		{% assign tags = '' | split: ',' %}
+		{% assign unique_tags = '' | split: ',' %}
+
+		{% assign post_tags =  site.posts | map: 'tags' | join: ',' | join: ',' | split: ',' %}
+
+		{% for tag in post_tags '%}
+		  {% assign tags = tags | push: tag %}
+		{% endfor %}
+		
+		{% assign tags = tags | sort %}
+		{% for tag in tags %}
+		  {% unless tag == previous %}
+		    {% assign unique_tags = unique_tags | push: tag %}
+		  {% endunless %}
+		  {% assign previous = tag %}
+		{% endfor %}
+
+		{% for tag in unique_tags %}
+			<li>{{tag}}</li>
+		{% endfor %}
 	</ul>
 </section>
 
 
-<section class="posts-container">
+<section class="posts-container" id="posts">
 	{% include borderline.html %}
-	<div class="post-grid">
+	<div class="post-grid list">
 		{% assign posts=site.posts | where:"lang", page.lang %}
 		{% for post in posts %}
-		<article>
+		<article data-tags="{{post.tags | join: '-'}}">
 			<div class="post-header">
 			    <div class="txt-container">
 			    	<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>

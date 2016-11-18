@@ -8,7 +8,6 @@
     <nav class="site-nav">
 
       <ul>
-        <li><a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ site.index[page.lang].title }}</a></li>
         {% assign pages=site.pages | where:"lang", page.lang | sort:"order" %}
         {% for my_page in pages %}
           {% if my_page.isInMenu and my_page.title  %}
@@ -28,7 +27,7 @@
           </li>
         {% endfor %}
       </ul>
-      <span class="cta cta-blue"><i class="icon-pencil"></i></span>
+      <button class="cta cta-blue"><i class="icon-pencil"></i></button>
     </div>
     
 </header>

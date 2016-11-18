@@ -7,17 +7,50 @@ lang: fr
 order : 3
 ---
 
-<h1 class="page-heading">Posts</h1>
+<section class="hero hero-blog">
+	<ul class="tags-list">
+		{% assign tags = '' | split: ',' %}
+		{% assign unique_tags = '' | split: ',' %}
 
-<ul class="post-list">
-{% assign posts=site.posts | where:"lang", page.lang %}
-{% for post in posts %}
-  <li>
-    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		{% assign post_tags =  site.posts | map: 'tags' | join: ',' | join: ',' | split: ',' %}
 
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-  </li>
-{% endfor %}
-</ul>
+		{% for tag in post_tags '%}
+		  {% assign tags = tags | push: tag %}
+		{% endfor %}
+		
+		{% assign tags = tags | sort %}
+		{% for tag in tags %}
+		  {% unless tag == previous %}
+		    {% assign unique_tags = unique_tags | push: tag %}
+		  {% endunless %}
+		  {% assign previous = tag %}
+		{% endfor %}
+
+		{% for tag in unique_tags %}
+			<li>{{tag}}</li>
+		{% endfor %}
+	</ul>
+</section>
+
+
+<section class="posts-container" id="posts">
+	{% include borderline.html %}
+	<div class="post-grid" class="list">
+		{% assign posts=site.posts | where:"lang", page.lang %}
+		{% for post in posts %}
+		<article data-tags="{{post.tags | join: '-'}}">
+			<div class="post-header">
+			    <div class="txt-container">
+			    	<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+			    	<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+			    </div>
+				<img src="http://placehold.it/300x169">
+			</div>
+			<div class="post-intro">
+				{{post.excerpt}}
+				<a class="cta-readmore" href="{{ post.url | prepend: site.baseurl }}">{{site.t[page.lang].readMore}}</a>
+			</div>
+
+		</article>
+		{% endfor %}
+</section>
