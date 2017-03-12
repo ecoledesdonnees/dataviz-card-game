@@ -1,6 +1,6 @@
 # The Dataviz Card Game
 
-![](https://raw.githubusercontent.com/ecoledesdonnees/dataviz-card-game/master/visuals/logoDatavizCardGame2.png)
+![](https://raw.githubusercontent.com/ecoledesdonnees/dataviz-card-game/master/visuals/logo/logoDatavizCardGame2.png)
 
 [![Join the chat at https://gitter.im/ecoledesdonnees/dataviz-card-game](https://badges.gitter.im/ecoledesdonnees/dataviz-card-game.svg)](https://gitter.im/ecoledesdonnees/dataviz-card-game)  
 
@@ -20,7 +20,7 @@ The Dataviz Card Game has been prototyped by Cédric Lombion in 2014, and was in
 
 Dataviz Cards (initial prototype) | Story Cards (initial prototype)
 -----|-----
-![](https://raw.githubusercontent.com/ecoledesdonnees/dataviz-card-game/master/visuals/datavizcards_prototype1.gif) | ![](https://github.com/ecoledesdonnees/dataviz-card-game/blob/master/visuals/storycards_prototype2.gif)
+![](https://raw.githubusercontent.com/ecoledesdonnees/dataviz-card-game/master/visuals/story_cards/datavizcards_prototype1.gif) | ![](https://github.com/ecoledesdonnees/dataviz-card-game/blob/master/visuals/story_cards/storycards_prototype2.gif)
 
 ### Sweet! I want to know more!
 
